@@ -53,7 +53,7 @@ def handle_person(id: int):
         db.session.commit()
         return jsonify(person.serialize()), 200
     if request.method == 'GET':
-        body = request.get_json()
+        #body = request.get_json()
         person = Person.query.get(id).serialize()
         return jsonify(person), 200
     if request.method == 'DELETE':
