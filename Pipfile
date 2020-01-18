@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 flask = "*"
@@ -17,9 +18,10 @@ mysql-connector-python = "*"
 flask-cors = "*"
 gunicorn = "*"
 mysqlclient = "*"
+cython = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7.6"
 
 [scripts]
 start="flask run -p 3000 -h 0.0.0.0"
