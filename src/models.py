@@ -17,6 +17,7 @@ class Person(db.Model):
             "full_name": self.full_name,
             "email": self.email,
             "address": self.address,
-            "phone": self.phone
+            "phone": self.phone,
+            "id": self.id
 
         }
